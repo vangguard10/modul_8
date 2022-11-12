@@ -41,9 +41,12 @@ keluar/exit            : 3''')
         o=1
         print('tekan <ENTER> untuk selesai')
         while o==1:
-            angka_h=str(input('masukan data hexadecimal: '))
+            angka_h=str
+            (input('masukan data hexadecimal: '))
             if angka_h=='':
                 o=0
+            elif angka_h<0:
+                print('Invalid input!')
             else:
                 list(angka_h)
                 htod(angka_h)
